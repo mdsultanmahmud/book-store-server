@@ -17,7 +17,7 @@ module.exports = {
   connectToServer: async function() {
     try {
       await client.connect();
-      dbConnection = client.db("tools")
+      dbConnection = client.db("books")
       console.log("db connected");
     } 
     catch(err){
